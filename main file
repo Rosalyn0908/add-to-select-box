@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+<script>
+$(document).ready(function(){
+    $('button').click(function(){
+        var addTo = parseInt($('textarea').val());    
+        if (!isNaN(addTo)){
+            $('select').append('<option>' + addTo + '</option>');
+            }
+    });
+    
+});
+</script>
+
+Type a number<textarea></textarea> <button>Submit</button>
+
+<br>
+<hr>
+    <select multiple="5"></select>
+
+</body>
+
+</html>
